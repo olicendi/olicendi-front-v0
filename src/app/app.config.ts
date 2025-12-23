@@ -5,7 +5,7 @@ import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { baseUrlInterceptorFn } from './core/services/base-url.interceptor';
+import { baseUrlInterceptorFn } from './core/functions/base-url.interceptor';
 
 export const appConfig: ApplicationConfig = {
       providers: [
