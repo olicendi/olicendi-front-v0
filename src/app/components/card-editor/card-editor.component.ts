@@ -6,7 +6,7 @@ import { TuiTextfield } from '@taiga-ui/core';
     selector: 'ol-card-editor',
     imports: [FormsModule, TuiTextfield],
     templateUrl: './card-editor.component.html',
-    styleUrl: './card-editor.component.scss'
+    styleUrl: './card-editor.component.scss',
 })
 export class CardEditorComponent {
     value = 'olicendi-front-v0';

@@ -4,14 +4,20 @@ export const routes: Routes = [
     {
         path: '',
         loadComponent: () =>
-            import('./layouts/main/main.component').then(c => c.MainComponent)
+            import('./layouts/main/main.component').then(
+                (c) => c.MainComponent
+            ),
     },
     {
         path: 'login',
         loadComponent: () =>
-            import('./layouts/auth/auth.component').then(c => c.AuthComponent)
+            import('./layouts/auth/auth.component').then(
+                (c) => c.AuthComponent
+            ),
     },
     {
-        path: '**', redirectTo: '', pathMatch: 'full'
-    }
+        path: '**',
+        redirectTo: '',
+        pathMatch: 'full',
+    },
 ];
